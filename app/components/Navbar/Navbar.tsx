@@ -8,6 +8,7 @@ import {
     NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 import { Menu } from "lucide-react";
+import config from "../../../next.config"
 
 const options = [
     { label: "Home", href: "/" },
@@ -41,7 +42,7 @@ const Navbar = ({ onOpenSidebar }: { onOpenSidebar: () => void }) => {
             <NavigationMenu className="hidden md:flex w-full px-6 justify-between items-center max-w-6xl">
                 <Link href="/">
                     <Image
-                        src="/img/white_logo.png"
+                        src={`${config.basePath}/img/white_logo.png`}
                         alt="Matteo Papa Logo"
                         width={40}
                         height={40}
@@ -56,7 +57,7 @@ const Navbar = ({ onOpenSidebar }: { onOpenSidebar: () => void }) => {
                         return (
                             <NavigationMenuLink
                                 key={option.label}
-                                href={option.href}
+                                href={`${config.basePath}${option.href}`}
                                 className={`font-medium transition-colors hover:text-white hover:bg-transparent focus:bg-transparent ${
                                     isActive ? "" : "text-muted-foreground"
                                 }`}
@@ -72,7 +73,7 @@ const Navbar = ({ onOpenSidebar }: { onOpenSidebar: () => void }) => {
             <div className="w-full flex justify-between items-center px-6 md:hidden">
                 <Link href="/">
                     <Image
-                        src="/img/white_logo.png"
+                        src= {config.basePath + "/img/white_logo.png"}
                         alt="Matteo Papa Logo"
                         width={40}
                         height={40}

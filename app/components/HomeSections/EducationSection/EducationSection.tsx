@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { GraduationCap, School, Languages } from "lucide-react";
+import config from '../../../../next.config';
 
 const educationItems = [
     {
@@ -8,28 +9,28 @@ const educationItems = [
         institution: "Sapienza University of Rome",
         date: "2023 - Present",
         icon: <GraduationCap className="w-6 h-6 text-primary" />,
-        image: "/img/educationCards/sapienza.png",
+        image: config.basePath + "/img/educationCards/sapienza.png",
     },
     {
         title: "Bachelor’s Degree in Computer Engineering",
         institution: "Sapienza University of Rome",
         date: "2019 - 2023",
         icon: <GraduationCap className="w-6 h-6 text-primary" />,
-        image: "/img/educationCards/sapienza.png",
+        image: config.basePath + "/img/educationCards/sapienza.png",
     },
     {
         title: "High School Diploma - Scientific Studies",
         institution: "Liceo Scientifico Statale Nomentano",
         date: "Graduated in 2019",
         icon: <School className="w-6 h-6 text-primary" />,
-        image: "/img/educationCards/nomentano.png",
+        image: config.basePath + "/img/educationCards/nomentano.png",
     },
     {
         title: "Certified C1 Advanced (CEFR) - English",
         institution: "Cambridge English Language Assessment",
         date: "2019",
         icon: <Languages className="w-6 h-6 text-primary" />,
-        image: "/img/educationCards/cambridge.png",
+        image: config.basePath + "/img/educationCards/cambridge.png",
     },
 ];
 

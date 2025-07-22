@@ -3,6 +3,8 @@ import React from "react";
 import { ShieldCheck, Trophy, Presentation, Target } from "lucide-react";
 import CyberCarousel from "./CyberCarousel";
 import Image from "next/image";
+import config from "../../.././../next.config"
+
 const highlights = [
     {
         title: "National Winner",
@@ -37,7 +39,7 @@ const CyberChallengeSection = () => {
                 <div className="w-lg flex flex-col md:flex-row justify-center items-center gap-9">
                     <div className="relative w-[100px] h-[100px] md:w-[200px] md:h-[200px] flex items-center justify-center">
                         <Image
-                            src="/img/ccit_logo.png"
+                            src={config.basePath + "/img/ccit_logo.png"}
                             alt="Cyberchallenge Logo"
                             fill
                             className="object-contain"

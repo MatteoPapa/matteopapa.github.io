@@ -3,6 +3,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import config from "../../.././../next.config"
 
 const media = [
     {
@@ -12,32 +13,32 @@ const media = [
     },
     {
         type: "image",
-        src: "/img/cc/cc2.jpg",
+        src: config.basePath + "/img/cc/cc2.jpg",
         alt: "CC Photo",
     },
     {
         type: "image",
-        src: "/img/cc/cc8.jpg",
+        src: config.basePath + "/img/cc/cc8.jpg",
+        alt: config.basePath +  "CC Photo",
+    },
+    {
+        type: "image",
+        src: config.basePath + "/img/cc/cc3.jpg",
         alt: "CC Photo",
     },
     {
         type: "image",
-        src: "/img/cc/cc3.jpg",
+        src: config.basePath + "/img/cc/cc5.jpg",
         alt: "CC Photo",
     },
     {
         type: "image",
-        src: "/img/cc/cc5.jpg",
+        src: config.basePath + "/img/cc/cc4.jpg",
         alt: "CC Photo",
     },
     {
         type: "image",
-        src: "/img/cc/cc4.jpg",
-        alt: "CC Photo",
-    },
-    {
-        type: "image",
-        src: "/img/cc/cc7.jpg",
+        src: config.basePath + "/img/cc/cc7.jpg",
         alt: "CC Photo",
     },
 ];
@@ -79,7 +80,7 @@ const CyberCarousel = () => {
                                         alt={item.alt ?? ""}
                                         className="w-full h-full object-cover"
                                         width={2000}
-                                        height={500}
+                                        height={2000}
                                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 60vw"
                                     />
                                 ) : (
@@ -87,7 +88,7 @@ const CyberCarousel = () => {
                                         controls
                                         className="w-full h-full object-contain bg-black"
                                         width={2000}
-                                        height={500}
+                                        height={2000}
                                     >
                                         <source src={item.src} type="video/mp4" />
                                         Your browser does not support the video tag.

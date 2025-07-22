@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import config from "../../../../next.config";
 
 const images = [
     "/img/projects/assassin.png",
@@ -31,10 +32,10 @@ const ProjectsFan = () => {
                         transition={{ type: "spring", stiffness: 300 }}
                     >
                         <Image
-                            src={src}
+                            src={config.basePath + src}
                             alt={`Project ${i + 1}`}
                             width={250}
-                            height={180}
+                            height={250}
                             className="rounded-md shadow-md object-cover border border-border"
                         />
                     </motion.div>

@@ -3,6 +3,7 @@ import { Geist_Mono } from "next/font/google";
 import { Saira } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "./ClientLayout";
+import config from "../next.config"
 
 const sans = Saira({
   variable: "--font-sans",
@@ -19,8 +20,7 @@ export const metadata: Metadata = {
   description: "Created with Next.js and ShadCN",
 icons: {
   icon: [
-    { url: "/img/white_logo.png", sizes: "32x32", type: "image/png" },
-    { url: "/img/white_logo.png", sizes: "16x16", type: "image/png" },
+    { url: config.basePath + "/img/white_logo.png", sizes: "32x32", type: "image/png" },
   ],
 },
 

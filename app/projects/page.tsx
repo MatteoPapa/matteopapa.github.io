@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
+import config from "../../next.config"
 
 const projects = [
     {
@@ -133,7 +134,7 @@ const ProjectPage = () => {
                         key={project.title}
                         title={project.title}
                         description={project.description}
-                        imageUrl={project.imageUrl}
+                        imageUrl={config.basePath + project.imageUrl}
                         githubUrl={project.githubUrl}
                         skills={project.skills}
                     />
