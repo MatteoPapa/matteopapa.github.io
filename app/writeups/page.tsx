@@ -16,7 +16,7 @@ const WriteupPage = () => {
             <div className="max-w-3xl mx-auto text-center flex flex-col justify-center items-center">
                 <div className="flex flex-col justify-center">
                     <h1 className="text-4xl font-bold mb-6">Writeups</h1>
-                    <Image src={config.basePath + "img/wip.png"} alt="Work In Progress" width={250} height={250} priority/>
+                    <Image src={config.basePath + "/img/wip.png"} alt="Work In Progress" width={250} height={250} priority/>
                 </div>
 
             </div>
