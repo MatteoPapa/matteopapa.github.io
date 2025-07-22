@@ -7,6 +7,7 @@ import ProjectsSection from "./components/HomeSections/ProjectsSection/ProjectsS
 import WriteupsSection from "./components/HomeSections/WriteupsSection/WriteupsSection";
 import SkillsSection from "./components/HomeSections/SkillsSection/SkillsSection";
 import ContactMeSection from "./components/HomeSections/ContactMeSection/ContactMeSection";
+import FadeInSection from "./components/FadeInSection/FadeInSection";
 
 export default function Home() {
   return (
@@ -18,12 +19,12 @@ export default function Home() {
       className="flex flex-col justify-center items-center gap-0 pt-32"
     >
       <HeroSection />
-      <EducationSection />
-      <CyberChallengeSection />
-      <ProjectsSection />
-      <WriteupsSection />
-      <SkillsSection />
-      <ContactMeSection />
+      <FadeInSection><EducationSection /></FadeInSection>
+      <FadeInSection><CyberChallengeSection /></FadeInSection>
+      <FadeInSection><ProjectsSection /></FadeInSection>
+      <FadeInSection><WriteupsSection /></FadeInSection>
+      <FadeInSection><SkillsSection /></FadeInSection>
+      <FadeInSection><ContactMeSection /></FadeInSection>
     </motion.div>
   );
 }

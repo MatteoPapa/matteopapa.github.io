@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
-import config from "../../next.config"
+import config from "../../next.config";
+import FadeInCard from "../components/ProjectCard/FadeInCard";
 
 const projects = [
     {
@@ -106,7 +107,7 @@ const projects = [
         ],
     },
 
-    // Add more projects here
+    // TODO: More Projects Here
 ];
 
 const ProjectPage = () => {
@@ -130,14 +131,15 @@ const ProjectPage = () => {
             {/* Grid of project cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl">
                 {projects.map((project) => (
-                    <ProjectCard
-                        key={project.title}
-                        title={project.title}
-                        description={project.description}
-                        imageUrl={config.basePath + project.imageUrl}
-                        githubUrl={project.githubUrl}
-                        skills={project.skills}
-                    />
+                    <FadeInCard key={project.title}>
+                        <ProjectCard
+                            title={project.title}
+                            description={project.description}
+                            imageUrl={config.basePath + project.imageUrl}
+                            githubUrl={project.githubUrl}
+                            skills={project.skills}
+                        />
+                    </FadeInCard>
                 ))}
             </div>
         </motion.div>

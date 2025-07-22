@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-
+import Image from "next/image";
+import config from "../../next.config"
 
 const WriteupPage = () => {
     return (
@@ -15,9 +16,7 @@ const WriteupPage = () => {
             <div className="max-w-3xl mx-auto text-center flex flex-col justify-center items-center">
                 <div className="flex flex-col justify-center">
                     <h1 className="text-4xl font-bold mb-6">Writeups</h1>
-                    <p className="text-muted-foreground text-lg mb-10">
-                        A pletora of personal writeups.
-                    </p>
+                    <Image src={config.basePath + "img/wip.png"} alt="Work In Progress" width={250} height={250} priority/>
                 </div>
 
             </div>
