@@ -28,6 +28,21 @@ const projects = [
         ],
     },
     {
+        title: "Totti",
+        description:
+            "A high-performance flag submission UI for attack-defense CTFs, built with React, Vite.js, and ECharts to visualize real-time exploit and team performance.",
+        imageUrl: "/img/projects/totti.png",
+        githubUrl: "https://github.com/TheRomanXpl0it/TOTTI-2",
+        skills: [
+            "React",
+            "Vite.js",
+            "Material UI",
+            "ECharts",
+            "X-Charts",
+            "Docker",
+        ],
+    },
+    {
         title: "AngelPit",
         description:
             "A regex-driven WAF built on mitmproxy, enabling real-time HTTPS inspection, header filtering, and automated PCAP logging for security research.",
@@ -61,18 +76,56 @@ const projects = [
         ],
     },
     {
-        title: "Totti",
+        title: "AYF",
         description:
-            "A high-performance flag submission UI for attack-defense CTFs, built with React, Vite.js, and ECharts to visualize real-time exploit and team performance.",
-        imageUrl: "/img/projects/totti.png",
-        githubUrl: "https://github.com/TheRomanXpl0it/TOTTI-2",
+            "A real-time multiplayer party game where players eliminate each other through stealth-based tasks. Built with a React frontend, Node.js backend, and enhanced with WebSockets, MongoDB, Firebase, and Cloudinary for live interactions, media, and authentication.",
+        imageUrl: "/img/projects/assassin.png",
+        githubUrl: "https://github.com/MatteoPapa/AssassinateYourFriends",
         skills: [
             "React",
-            "Vite.js",
-            "Material UI",
-            "ECharts",
-            "X-Charts",
+            "Node.js",
+            "Express",
+            "WebSockets",
+            "MongoDB",
+            "Firebase",
+            "Cloudinary",
+            "JWT",
+        ],
+    },
+    {
+        title: "TreeGraphBuilder.Js",
+        description:
+            "An interactive JavaScript tool for building hierarchical trees from CSV data, featuring real-time layout customization, CSV parsing with PapaParse, and dynamic graph rendering via vis.js.",
+        imageUrl: "/img/projects/treegraph.png",
+        githubUrl: "https://github.com/MatteoPapa/TreeGraphBuilder.Js",
+        skills: [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "PapaParse",
+            "vis.js",
+            "CSV Parsing",
+            "Data Visualization",
+            "UI Design",
+        ],
+    },
+    {
+        title: "Jobify",
+        description:
+            "A Node.js web app that connects employers and job seekers with job listings, real-time chat via RabbitMQ, and Google OAuth-based authentication. Includes Dockerized services and Google API integration for resumes and interview scheduling.",
+        imageUrl: "/img/projects/jobify.png",
+        githubUrl: "https://github.com/matteo-cutroni/progettordc",
+        skills: [
+            "Node.js",
+            "Express",
+            "Google OAuth",
+            "Passport.js",
             "Docker",
+            "RabbitMQ",
+            "Mocha",
+            "Google Drive API",
+            "Google Calendar API",
+            "EJS",
         ],
     },
     {
