@@ -10,7 +10,7 @@ export default function FadeInCard({
     children: React.ReactNode;
 }) {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: "-20% 0px -20% 0px" });
+    const isInView = useInView(ref, { once: true});
 
     return (
         <motion.div

@@ -1,7 +1,10 @@
 "use client";
 import React from "react";
 import { GraduationCap, School, Languages } from "lucide-react";
-import config from '../../../../next.config';
+import config from "../../../../next.config";
+import { motion } from "framer-motion";
+import Lottie from "lottie-react";
+import animationData from "../../../../public/animations/walker.json";
 
 const educationItems = [
     {
@@ -36,7 +39,7 @@ const educationItems = [
 
 const EducationSection = () => {
     return (
-        <section className="relative w-full px-8 py-8 bg-black/60 backdrop-blur-md">
+        <section className="relative w-full px-8 py-8 bg-black/60 backdrop-blur-md pb-24 overflow-hidden">
             <div className="relative not-odd:z-10 container max-w-6xl mx-auto py-4 flex flex-col items-center">
                 <h2 className="text-3xl font-bold">Education</h2>
                 <p className="w-10/12 py-3 pb-7 text-lg leading-relaxed text-center text-muted-foreground">
@@ -73,6 +76,23 @@ const EducationSection = () => {
                     ))}
                 </div>
             </div>
+            {/* Lottie Animation Moving Horizontally */}
+            <motion.div
+                className="absolute -bottom-1 left-0 z-60"
+                initial={{ x: "-10vw" }}
+                animate={{ x: "100vw" }}
+                transition={{
+                    duration: 25,
+                    repeat: Infinity,
+                    ease: "linear",
+                }}
+            >
+                <Lottie
+                    animationData={animationData}
+                    loop={true}
+                    style={{ height: 70 }}
+                />
+            </motion.div>
         </section>
     );
 };
