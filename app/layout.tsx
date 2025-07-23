@@ -17,7 +17,7 @@ const mono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Matteo Papa - Portfolio",
-  description: "Created with Next.js and ShadCN",
+  description: "Portfolio Website of Matteo Papa",
 icons: {
   icon: [
     { url: config.basePath + "/img/white_logo.png", sizes: "32x32", type: "image/png" },
