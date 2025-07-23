@@ -16,7 +16,7 @@ const TextPanel = () => {
             </p>
             <p className="text-lg leading-relaxed text-muted-foreground">
                 But hey, <strong>persistence usually pays off!</strong>{" "}
-                <strong className="px-1">😊</strong>
+                <strong className="px-1">:D</strong>
             </p>
         </div>
     );

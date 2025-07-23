@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import config from "../../next.config";
 import FadeInCard from "../components/ProjectCard/FadeInCard";
+import Lottie from "lottie-react";
+import animationData from "../../public/animations/coding.json";
+import { Separator } from "@/components/ui/separator";
 
 const projects = [
     {
@@ -120,13 +123,25 @@ const ProjectPage = () => {
             className="w-full flex flex-col justify-center items-center pt-32 px-4 pb-16"
         >
             {/* Header */}
-            <div className="max-w-3xl text-center mb-12">
-                <h1 className="text-4xl font-bold mb-4">Projects</h1>
-                <p className="text-muted-foreground text-lg">
-                    A collection of projects spanning full-stack web
-                    development, cybersecurity, systems engineering and more.
-                </p>
+            <div className="flex flex-col md:flex-row mb-4 w-full max-w-6xl items-center">
+                {/* Lottie background container */}
+                {/* Foreground text block */}
+                <div className="md:w-1/3 flex justify-center items-center">
+                    <Lottie
+                        animationData={animationData}
+                        style={{ width: 400 }}
+                    />
+                </div>
+                <div className="w-full h-full px-4 rounded-lg items-center justify-center text-center md:text-start">
+                    <h1 className="text-4xl font-bold mb-4">Projects</h1>
+                    <p className="text-muted-foreground text-lg">
+                        A collection of projects spanning full-stack web
+                        development, cybersecurity, systems engineering and
+                        more.
+                    </p>
+                </div>{" "}
             </div>
+            <Separator className="z-20 mb-6 max-w-6xl" />
 
             {/* Grid of project cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl">
