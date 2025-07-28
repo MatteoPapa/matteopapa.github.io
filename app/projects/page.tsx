@@ -93,23 +93,6 @@ const projects = [
         ],
     },
     {
-        title: "TreeGraphBuilder.Js",
-        description:
-            "An interactive JavaScript tool for building hierarchical trees from CSV data, featuring real-time layout customization, CSV parsing with PapaParse, and dynamic graph rendering via vis.js.",
-        imageUrl: "/img/projects/treegraph.png",
-        githubUrl: "https://github.com/MatteoPapa/TreeGraphBuilder.Js",
-        skills: [
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "PapaParse",
-            "vis.js",
-            "CSV Parsing",
-            "Data Visualization",
-            "UI Design",
-        ],
-    },
-    {
         title: "Jobify",
         description:
             "A Node.js web app that connects employers and job seekers with job listings, real-time chat via RabbitMQ, and Google OAuth-based authentication. Includes Dockerized services and Google API integration for resumes and interview scheduling.",
@@ -128,6 +111,38 @@ const projects = [
             "EJS",
         ],
     },
+    {
+        title: "TennisScore",
+        description:
+            "A ZeppOS smartwatch app that tracks tennis scores with intuitive UI for match management. Supports points, games, sets, tiebreaks, and persistent storage with reset controls—optimized for small screens.",
+        imageUrl: "/img/projects/tennisscore.png",
+        githubUrl: "https://github.com/MatteoPapa/TennisScore",
+        skills: [
+            "JavaScript",
+            "Zeus CLI",
+            "ZeppOS SDK",
+            "UI Widgets",
+            "Wearable UX",
+        ],
+    },
+    {
+        title: "TreeGraphBuilder.Js",
+        description:
+            "An interactive JavaScript tool for building hierarchical trees from CSV data, featuring real-time layout customization, CSV parsing with PapaParse, and dynamic graph rendering via vis.js.",
+        imageUrl: "/img/projects/treegraph.png",
+        githubUrl: "https://github.com/MatteoPapa/TreeGraphBuilder.Js",
+        skills: [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "PapaParse",
+            "vis.js",
+            "CSV Parsing",
+            "Data Visualization",
+            "UI Design",
+        ],
+    },
+
     {
         title: "ManageMyYoutube",
         description:
